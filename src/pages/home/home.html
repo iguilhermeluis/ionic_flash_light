@@ -1,18 +1,42 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <div class="containerButtonTop">
+    <div class="btnTop btn1">
+      <span>
+        <p>1</p>
+      </span>
+    </div>
+    <div class="btnTop btn2">
+      <span>
+        <p>2</p>
+      </span>
+    </div>
+    <div class="btnTop btn3">
+      <span>
+        <p>3</p>
+      </span>
+    </div>
+  </div>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <p class="titleModel">{{device.model}}</p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div class="containerButtonMain">
+    <div class="boxButtonMain" (click)="lanterna()">
+      <span>
+        <img src="assets/imgs/icon-power.svg" />
+      </span>
+    </div>
+  </div>
+
+  <div class="containerButtonFooter">
+    <div class="boxButtonFooter" (click)="vibrar()">
+      <span>
+        <img src="assets/imgs/raio.svg" />
+      </span>
+    </div>
+
+    <div class="boxInfoBattery">
+      <p>{{nivelBateria}}%</p>
+      <img src="assets/imgs/battery.svg" />
+    </div>
+  </div>
 </ion-content>
