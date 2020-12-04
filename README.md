@@ -1,5 +1,5 @@
 ﻿# ionic flash_light
-<img src="screenshots_app.png" alt="Screenshots" align="center" />
+<img src="screenshot_app.png" alt="Screenshots" align="center" />
 
 <br/>
 <div align="center">
